@@ -51,9 +51,17 @@ const pinkPrice = .55
 
 // CODE HERE
 
+let totalAcres = 0;
 
+for(let i = 0; i < fujiAcres.length; i++){
+    totalAcres = fujiAcres[i] + totalAcres;
+    totalAcres = galaAcres[i] + totalAcres;
+    totalAcres = pinkAcres[i] + totalAcres;
+}
 
+console.log(totalAcres)
 
+// To get this awnser I use a for loop becauase I needed to read over the data in all the arrays to get my solution. I wrote the code like this with fujiAcres.length becuase it would be impossible to add an additional day of the week. However if it were the case that would happen the code would need be written in seperate for loops to insure we were adding the proper amount of days.
 
 // PROBLEM 2
 
@@ -70,8 +78,14 @@ const pinkPrice = .55
 // CODE HERE
 
 
+let averageDailyAcres = totalAcres / fujiAcres.length;
 
 
+
+console.log(averageDailyAcres)
+
+
+// This was pretty simple math. I made my new var averageDailyAcres = sum of vaules (total acres of land) and divided by fujiacres.length which is the number of values (days).
 
 // PROBLEM 3
 
@@ -107,6 +121,13 @@ let days = 0
 
 // CODE HERE
 
+
+while(acresLeft > 0){
+    acresLeft - averageDailyAcres;
+    days ++
+}
+
+console.log(days)
 
 
 // PROBLEM 4
