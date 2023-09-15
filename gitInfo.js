@@ -11,6 +11,8 @@
 
 //CODE HERE
 
+let gitDefinition = 'git is a VCS that allows you to track changes made you have made to your code or computer files in general in a repositories. '
+
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,6 +20,8 @@
 */
 
 //CODE HERE
+
+let gitHubDefinition = 'Github is an online server that allows you to store snap shots of your code on a global level. This way if your computer fails you still have your code else where.'
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -27,6 +31,8 @@
 
 //CODE HERE
 
+let gitInitDefinition = 'The command git init adds git to your file which allows you to track the files. '
+
 //////////////////PROBLEM 4////////////////////
 /*
     Create a variable called 'gitCloneDefinition'.  
@@ -35,6 +41,7 @@
 
 //CODE HERE
 
+let gitCloneDefinition = 'The command git clone is to copy or clone a existing repo in a folder.'
 //////////////////PROBLEM 5////////////////////
 /*
     Create a variable called 'gitStatusDefinition'.  
@@ -42,6 +49,8 @@
 */
 
 //CODE HERE
+
+let gitStatusDefinition = 'The command git status allows you to get an update of the current stage of the file is in.'
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -53,6 +62,9 @@
 */
 
 //CODE HERE
+let gitAddDefinition='git add commands the software to track every file in that folder.'
+
+let gitAddCode ='git add .'
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -65,6 +77,10 @@
 
 //CODE HERE
 
+let gitCommitDefinition = 'git commit pretty much saves all of the changes that have been made to your folder.'
+
+let gitCommitCode = 'git commit -m "initial commit"'
+
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -73,3 +89,5 @@
 */
 
 //CODE HERE
+
+let gitPushDefinition = 'git push, pushes your local repo to the global repo and stores the snap shot of the code on github.'
