@@ -122,13 +122,13 @@ let days = 0
 // CODE HERE
 
 
-while(acresLeft > 0){
-    acresLeft - averageDailyAcres;
-    days ++
+while(acresLeft >= 0){
+  acresLeft = acresLeft - averageDailyAcres;
+   days = days + 1;
 }
-
 console.log(days)
 
+// I I used a while loop to find how many days of work it would take to gather all the apples. Every time the loop activated it would change the value of acresLeft by minusing averedayacres and then it would at 1 day to the day var and then restart until acresleft was equal to zero
 
 // PROBLEM 4
 
@@ -156,14 +156,24 @@ console.log(days)
 
 // CODE HERE
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+let fujiTons = []
+let galaTons = []
+let pinkTons = []
+
+
+for(let i = 0; i < fujiAcres.length; i++){
+  fujiTons.push(fujiAcres[i] * 6.5)
+  galaTons.push(galaAcres[i] * 6.5)
+  pinkTons.push(pinkAcres[i] * 6.5)
+}
+
+console.log(fujiTons)
+console.log(galaTons)
+console.log(pinkTons)
 
 
 
-
-
+// created a for loop to so that I could get the total of tons collected each day. 
 
 // PROBLEM 5
 
@@ -183,14 +193,38 @@ console.log(days)
 
 // CODE HERE 
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+let totalFujiTons = 0;
+let totalGalaTons = 0;
+let totalPinkTons = 0;
+
+
+for(let i = 0; i < fujiTons.length; i++){
+    totalFujiTons = fujiTons[i] + totalFujiTons;
+    totalGalaTons = galaTons [i] + totalGalaTons;
+    totalPinkTons = pinkTons [i] + totalPinkTons;
+}
+
+
+let fujiPounds = totalFujiTons * 2000;
+let galaPounds = totalGalaTons * 2000;
+let pinkPounds = totalPinkTons * 2000;
 
 
 
+// console.log(totalFujiTons)
+// console.log(totalGalaTons)
+// console.log(totalPinkTons)
 
 
+
+console.log(fujiPounds)
+console.log(galaPounds)
+console.log(pinkPounds)
+
+console.log('___________________')
+
+
+// Used a for loop to get the total of tons per style of apple and the saved that value in its own new variable and then assigned the pounds variable the value of fuji total * 2000 as seen above.
 
 // PROBLEM 6
 
@@ -210,14 +244,21 @@ console.log(days)
 
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+let fujiProfit = fujiPounds * fujiPrice;
+let galaProfit = galaPounds * galaPrice;
+let pinkProfit = pinkPounds * pinkPrice;
 
 
+console.log(fujiProfit)
+console.log(galaProfit)
+console.log(pinkProfit)
 
 
+console.log(`We made ${fujiProfit} dollars in profit`)
+console.log(`We made ${galaProfit} dollars in profit`)
+console.log(`We made ${pinkProfit} dollars in profit`)
 
+// I used the total pounds Variable * the price Variable to get the total profit.
 
 // PROBLEM 7
 
@@ -230,3 +271,13 @@ console.log(days)
 */
 
 // CODE HERE
+
+
+let totalProfit = fujiProfit + galaProfit + pinkProfit;
+
+console.log(totalProfit)
+
+console.log(`We made ${totalProfit} in total profit!!!`)
+
+
+// I added all of the profits together and assigned it to the new LET totalProfit.
